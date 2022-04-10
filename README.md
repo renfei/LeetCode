@@ -1,8 +1,18 @@
 # LeetCode Java
 
-一通操作猛如虎，提交一看超越百分之五。
+一通操作猛如虎，提交一看超越百分五。
 
 ## 目录
+
+### 基础
+
+基础知识部分，非 LeetCode 题目。
+
+#### 排序
+
+* [冒泡排序](src/main/java/net/renfei/base/Sort.java)
+* [选择排序](src/main/java/net/renfei/base/Sort.java)
+* [插入排序](src/main/java/net/renfei/base/Sort.java)
 
 ### Easy（简单）
 
