@@ -23,12 +23,17 @@ LeetCode题目部分，来自力扣题目。
 
 #### Easy（简单）
 
-* [1. 两数之和](src/main/java/net/renfei/leetcode/easy/TwoSum.java)
-* [530. 二叉搜索树的最小绝对差](src/main/java/net/renfei/leetcode/easy/MinimumAbsoluteDifferenceInBst.java)
-* [1684. 统计一致字符串的数目](src/main/java/net/renfei/leetcode/easy/CountTheNumberOfConsistentStrings.java)
+| 编号    | 名称 |
+|-------|----|
+| 1     | [两数之和](src/main/java/net/renfei/leetcode/easy/TwoSum.java) |
+| 530   | [二叉搜索树的最小绝对差](src/main/java/net/renfei/leetcode/easy/MinimumAbsoluteDifferenceInBst.java) |
+| 1684  | [统计一致字符串的数目](src/main/java/net/renfei/leetcode/easy/CountTheNumberOfConsistentStrings.java) |
 
 #### Medium（中等）
 
-* [2. 两数相加](src/main/java/net/renfei/leetcode/medium/AddTwoNumbers.java)
-* [229. 求众数 II](src/main/java/net/renfei/leetcode/medium/MajorityElementII.java)
-* [807. 保持城市天际线](src/main/java/net/renfei/leetcode/medium/MaxIncreaseKeepingSkyline.java)
+| 编号    | 名称 |
+|-------|----|
+| 2     | [两数相加](src/main/java/net/renfei/leetcode/medium/AddTwoNumbers.java) |
+| 229   | [求众数 II](src/main/java/net/renfei/leetcode/medium/MajorityElementII.java) |
+| 807   | [保持城市天际线](src/main/java/net/renfei/leetcode/medium/MaxIncreaseKeepingSkyline.java) |
+| 1797  | [设计一个验证系统](src/main/java/net/renfei/leetcode/medium/AuthenticationManager.java) |
