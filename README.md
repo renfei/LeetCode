@@ -13,6 +13,7 @@
 * [冒泡排序](src/main/java/net/renfei/base/Sort.java)
 * [选择排序](src/main/java/net/renfei/base/Sort.java)
 * [插入排序](src/main/java/net/renfei/base/Sort.java)
+* [快速排序](src/main/java/net/renfei/base/Sort.java)
 
 ### LeetCode
 

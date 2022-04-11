@@ -17,6 +17,7 @@ public class Sort {
         System.out.println("冒泡排序：" + Arrays.toString(bubbleSort(ARRAY)));
         System.out.println("选择排序：" + Arrays.toString(selectSort(ARRAY)));
         System.out.println("插入排序：" + Arrays.toString(insertSort(ARRAY)));
+        System.out.println("快速排序：" + Arrays.toString(quickSort(ARRAY)));
     }
 
     /**
@@ -96,6 +97,57 @@ public class Sort {
             }
         }
         return arr;
+    }
+
+    /**
+     * 快速排序
+     * 选第一个为基准，然后左右两个指针往中间移动，小于基准的往左换，大于基准的往右换
+     * 指针重叠时，就是基准应该去的位置，这样就按基准值分为两个部分
+     * [5] [6] [4] [2] [6] [8] [9] [2] [1] [4]
+     * ^   ^                               ^
+     * 基准 low                             high
+     *
+     * @param array
+     * @return
+     */
+    private static int[] quickSort(int[] array) {
+        // 复制一份，不操作原有数组
+        int[] arr = Arrays.copyOf(array, array.length);
+        qSort(arr, 0, arr.length - 1);
+        return arr;
+    }
+
+    private static void qSort(int[] array, int low, int high) {
+        if (low < high) {
+            int baseIndex = qSortIndex(array, low, high);
+            // 递归，排序基准值左右两侧
+            qSort(array, low, baseIndex - 1);
+            qSort(array, baseIndex + 1, high);
+        }
+    }
+
+    private static int qSortIndex(int[] array, int low, int high) {
+        // 取第一个为基准
+        int base = array[low];
+        // 指针不相遇就不停
+        while (low < high) {
+            // 先找最右侧的
+            while (low < high && array[high] >= base) {
+                // 如果右侧的比基准大，那么高位指针左移
+                high--;
+            }
+            // 经过上面的循环，可以确定右侧的比左侧的小，把值给小的
+            array[low] = array[high];
+            while (low < high && array[low] <= base) {
+                // 左侧的小于基准值，低位指针右移
+                low++;
+            }
+            // 经过上面的循环，可以确定左侧侧的比右侧的大，把值给大的
+            array[high] = array[low];
+        }
+        // 经过上面的循环，应该指针会相遇，就是基准值应该所在的位置
+        array[low] = base;
+        return low;
     }
 
     /**
