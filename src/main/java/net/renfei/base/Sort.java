@@ -18,6 +18,7 @@ public class Sort {
         System.out.println("选择排序：" + Arrays.toString(selectSort(ARRAY)));
         System.out.println("插入排序：" + Arrays.toString(insertSort(ARRAY)));
         System.out.println("快速排序：" + Arrays.toString(quickSort(ARRAY)));
+        System.out.println("归并排序：" + Arrays.toString(mergeSort(ARRAY)));
     }
 
     /**
@@ -148,6 +149,74 @@ public class Sort {
         // 经过上面的循环，应该指针会相遇，就是基准值应该所在的位置
         array[low] = base;
         return low;
+    }
+
+    /**
+     * 归并排序
+     * 思想是：
+     * - 申请空间，使其大小为两个已经排序序列之和，该空间用来存放合并后的序列；
+     * - 设定两个指针，最初位置分别为两个已经排序序列的起始位置；
+     * - 比较两个指针所指向的元素，选择相对小的元素放入到合并空间，并移动指针到下一位置；
+     * - 重复步骤 3 直到某一指针到达序列尾；
+     * - 将另一序列剩下的所有元素直接复制到合并序列尾。
+     *
+     * @param array
+     * @return
+     */
+    private static int[] mergeSort(int[] array) {
+        // 复制一份，不操作原有数组
+        int[] arr = Arrays.copyOf(array, array.length);
+
+        mergeSort(arr, 0, arr.length - 1);
+        return arr;
+    }
+
+    private static void mergeSort(int[] arr, int low, int high) {
+        if (low < high) {
+            // 求中间位置
+            // 此处用 (low+high)/2 也行，但可能溢出
+            int mid = low + ((high - low) >> 1);
+            //递归地对左右两边进行排序
+            mergeSort(arr, low, mid);
+            mergeSort(arr, mid + 1, high);
+            // 合并
+            merge(arr, low, mid, high);
+        }
+    }
+
+    private static void merge(int[] arr, int low, int mid, int high) {
+        //temp数组用于暂存合并的结果
+        int[] temp = new int[high - low + 1];
+        //左半边的指针
+        int left = low;
+        //右半边的指针
+        int right = mid + 1;
+        //合并后数组的指针
+        int mergeIndex = 0;
+
+        //将记录由小到大地放进temp数组
+        for (; left <= mid && right <= high; mergeIndex++) {
+            // 谁小就先放谁
+            if (arr[left] < arr[right]) {
+                temp[mergeIndex] = arr[left++];
+            } else {
+                temp[mergeIndex] = arr[right++];
+            }
+        }
+        // 上面循环以后，由于左右数据可能不平衡，会导致有一侧有剩余
+        // 接下来两个while循环是为了将剩余的（比另一边多出来的个数）放到temp数组中
+        while (left <= mid) {
+            temp[mergeIndex++] = arr[left++];
+        }
+
+        while (right <= high) {
+            temp[mergeIndex++] = arr[right++];
+        }
+
+        //将temp数组中的元素覆盖到待排数组中
+        for (int l = 0; l < temp.length; l++) {
+            arr[low + l] = temp[l];
+        }
     }
 
     /**
