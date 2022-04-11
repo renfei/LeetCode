@@ -15,6 +15,7 @@
 * [插入排序](src/main/java/net/renfei/base/Sort.java)
 * [快速排序](src/main/java/net/renfei/base/Sort.java)
 * [归并排序](src/main/java/net/renfei/base/Sort.java)
+* [睡眠排序](src/main/java/net/renfei/base/Sort.java)
 
 ### LeetCode
 

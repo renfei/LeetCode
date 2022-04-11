@@ -1,6 +1,8 @@
 package net.renfei.base;
 
 import java.util.Arrays;
+import java.util.concurrent.CountDownLatch;
+import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * 经典排序算法
@@ -9,7 +11,7 @@ import java.util.Arrays;
  */
 public class Sort {
     private static final int[] ARRAY = new int[]{
-            3, 5, 23, 7, 5, 86, -2, 4, 7, 8, 24, 45, 11
+            3, 5, 23, 7, 5, 86, 2, 4, 7, 8, 24, 45, 11
     };
 
     public static void main(String[] args) {
@@ -19,6 +21,7 @@ public class Sort {
         System.out.println("插入排序：" + Arrays.toString(insertSort(ARRAY)));
         System.out.println("快速排序：" + Arrays.toString(quickSort(ARRAY)));
         System.out.println("归并排序：" + Arrays.toString(mergeSort(ARRAY)));
+        System.out.println("睡眠排序：" + Arrays.toString(sleepSort(ARRAY)));
     }
 
     /**
@@ -216,6 +219,55 @@ public class Sort {
         //将temp数组中的元素覆盖到待排数组中
         for (int l = 0; l < temp.length; l++) {
             arr[low + l] = temp[l];
+        }
+    }
+
+    /**
+     * 睡眠排序
+     * 别当真，娱乐还是要有的
+     *
+     * @param array
+     * @return
+     */
+    private static int[] sleepSort(int[] array) {
+        // 复制一份，不操作原有数组
+        int[] arr = Arrays.copyOf(array, array.length);
+        int[] temp = new int[arr.length];
+        AtomicInteger index = new AtomicInteger(0);
+        CountDownLatch countDownLatch = new CountDownLatch(arr.length);
+        for (int val : arr) {
+            new Thread(new SleepSort(val, index, temp, countDownLatch)).start();
+        }
+        try {
+            countDownLatch.await();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        return temp;
+    }
+
+    private static class SleepSort implements Runnable {
+        private final int val;
+        private final AtomicInteger index;
+        private final int[] arr;
+        private final CountDownLatch countDownLatch;
+
+        SleepSort(int val, AtomicInteger index, int[] arr, CountDownLatch countDownLatch) {
+            this.val = val;
+            this.index = index;
+            this.arr = arr;
+            this.countDownLatch = countDownLatch;
+        }
+
+        @Override
+        public void run() {
+            try {
+                Thread.sleep(val);
+                arr[index.getAndIncrement()] = val;
+                countDownLatch.countDown();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
     }
 
