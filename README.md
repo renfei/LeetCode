@@ -32,9 +32,10 @@ LeetCode题目部分，来自力扣题目。
 
 #### Medium（中等）
 
-| 编号    | 名称 |
-|-------|----|
-| 2     | [两数相加](src/main/java/net/renfei/leetcode/medium/AddTwoNumbers.java) |
-| 229   | [求众数 II](src/main/java/net/renfei/leetcode/medium/MajorityElementII.java) |
-| 807   | [保持城市天际线](src/main/java/net/renfei/leetcode/medium/MaxIncreaseKeepingSkyline.java) |
-| 1797  | [设计一个验证系统](src/main/java/net/renfei/leetcode/medium/AuthenticationManager.java) |
+| 编号   | 名称 |
+|------|----|
+| 2    | [两数相加](src/main/java/net/renfei/leetcode/medium/AddTwoNumbers.java) |
+| 229  | [求众数 II](src/main/java/net/renfei/leetcode/medium/MajorityElementII.java) |
+| 322  | [零钱兑换](src/main/java/net/renfei/leetcode/medium/CoinChange.java) |
+| 807  | [保持城市天际线](src/main/java/net/renfei/leetcode/medium/MaxIncreaseKeepingSkyline.java) |
+| 1797 | [设计一个验证系统](src/main/java/net/renfei/leetcode/medium/AuthenticationManager.java) |
