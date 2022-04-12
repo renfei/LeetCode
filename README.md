@@ -26,6 +26,7 @@ LeetCode题目部分，来自力扣题目。
 | 编号   | 名称 |
 |------|----|
 | 1    | [两数之和](src/main/java/net/renfei/leetcode/easy/TwoSum.java) |
+| 278  | [第一个错误的版本](src/main/java/net/renfei/leetcode/easy/FirstBadVersion.java) |
 | 509  | [斐波那契数](src/main/java/net/renfei/leetcode/easy/FibonacciNumber.java) |
 | 530  | [二叉搜索树的最小绝对差](src/main/java/net/renfei/leetcode/easy/MinimumAbsoluteDifferenceInBst.java) |
 | 704  | [二分查找](src/main/java/net/renfei/leetcode/easy/BinarySearch.java) |
