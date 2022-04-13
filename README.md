@@ -27,6 +27,7 @@ LeetCode题目部分，来自力扣题目。
 |------|----|
 | 1    | [两数之和](src/main/java/net/renfei/leetcode/easy/TwoSum.java) |
 | 35   | [搜索插入位置](src/main/java/net/renfei/leetcode/easy/SearchInsertPosition.java) |
+| 217  | [存在重复元素](src/main/java/net/renfei/leetcode/easy/ContainsDuplicate.java) |
 | 278  | [第一个错误的版本](src/main/java/net/renfei/leetcode/easy/FirstBadVersion.java) |
 | 283  | [移动零](src/main/java/net/renfei/leetcode/easy/MoveZeroes.java) |
 | 344  | [反转字符串](src/main/java/net/renfei/leetcode/easy/ReverseString.java) |
