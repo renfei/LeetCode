@@ -46,6 +46,7 @@ LeetCode题目部分，来自力扣题目。
 | 1491 | [去掉最低工资和最高工资后的工资平均值](src/main/java/net/renfei/leetcode/easy/AverageSalaryExcludingTheMinimumAndMaximumSalary.java) |
 | 1523 | [在区间范围内统计奇数数目](src/main/java/net/renfei/leetcode/easy/CountOddNumbersInAnIntervalRange.java) |
 | 1684 | [统计一致字符串的数目](src/main/java/net/renfei/leetcode/easy/CountTheNumberOfConsistentStrings.java) |
+| 1757 | [可回收且低脂的产品](src/main/java/net/renfei/leetcode/easy/RecyclableAndLowFatProducts.sql) |
 
 ##### 剑指 Offer
 
