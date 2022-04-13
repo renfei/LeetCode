@@ -40,6 +40,7 @@ LeetCode题目部分，来自力扣题目。
 | 806  | [写字符串需要的行数](src/main/java/net/renfei/leetcode/easy/NumberOfLinesToWriteString.java) |
 | 876  | [链表的中间结点](src/main/java/net/renfei/leetcode/easy/MiddleOfTheLinkedList.java) |
 | 977  | [有序数组的平方](src/main/java/net/renfei/leetcode/easy/SquaresOfASortedArray.java) |
+| 1523 | [在区间范围内统计奇数数目](src/main/java/net/renfei/leetcode/easy/CountOddNumbersInAnIntervalRange.java) |
 | 1684 | [统计一致字符串的数目](src/main/java/net/renfei/leetcode/easy/CountTheNumberOfConsistentStrings.java) |
 
 ##### 剑指 Offer
