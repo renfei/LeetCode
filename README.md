@@ -44,6 +44,7 @@ LeetCode题目部分，来自力扣题目。
 | 编号           | 名称 |
 |--------------|----|
 | 剑指 Offer  09 | [用两个栈实现队列](src/main/java/net/renfei/leetcode/easy/jianzhioffer/YongLiangGeZhanShiXianDuiLieLcof.java) |
+| 剑指 Offer  30 | [包含min函数的栈](src/main/java/net/renfei/leetcode/easy/jianzhioffer/BaoHanMinhanShuDeZhanLcof.java) |
 
 #### Medium（中等）
 
