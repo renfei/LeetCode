@@ -32,6 +32,7 @@ LeetCode题目部分，来自力扣题目。
 | 278  | [第一个错误的版本](src/main/java/net/renfei/leetcode/easy/FirstBadVersion.java) |
 | 283  | [移动零](src/main/java/net/renfei/leetcode/easy/MoveZeroes.java) |
 | 344  | [反转字符串](src/main/java/net/renfei/leetcode/easy/ReverseString.java) |
+| 374  | [猜数字大小](src/main/java/net/renfei/leetcode/easy/GuessNumberHigherOrLower.java) |
 | 509  | [斐波那契数](src/main/java/net/renfei/leetcode/easy/FibonacciNumber.java) |
 | 530  | [二叉搜索树的最小绝对差](src/main/java/net/renfei/leetcode/easy/MinimumAbsoluteDifferenceInBst.java) |
 | 557  | [反转字符串中的单词 III](src/main/java/net/renfei/leetcode/easy/ReverseWordsInAStringIII.java) |
