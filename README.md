@@ -64,9 +64,11 @@ LeetCode题目部分，来自力扣题目。
 
 | 编号           | 名称 |
 |--------------|----|
+| 剑指 Offer 05 | [替换空格](src/main/java/net/renfei/leetcode/easy/jianzhioffer/TiHuanKongGeLcof.java) |
 | 剑指 Offer  06 | [从尾到头打印链表](src/main/java/net/renfei/leetcode/easy/jianzhioffer/CongWeiDaoTouDaYinLianBiaoLcof.java) |
 | 剑指 Offer  09 | [用两个栈实现队列](src/main/java/net/renfei/leetcode/easy/jianzhioffer/YongLiangGeZhanShiXianDuiLieLcof.java) |
 | 剑指 Offer  30 | [包含min函数的栈](src/main/java/net/renfei/leetcode/easy/jianzhioffer/BaoHanMinhanShuDeZhanLcof.java) |
+| 剑指 Offer 58 | [II. 左旋转字符串](src/main/java/net/renfei/leetcode/easy/jianzhioffer/ZuoXuanZhuanZiFuChuanLcof.java) |
 
 #### Medium（中等）
 
