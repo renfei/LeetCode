@@ -74,7 +74,8 @@ LeetCode题目部分，来自力扣题目。
 
 | 编号   | 名称 |
 |------|----|
-| 2    | [两数相加](src/main/java/net/renfei/leetcode/medium/AddTwoNumbers.java) |
+| 2    | [两数相加](src/main/java/net/renfei/leetcode/medium/RemoveNthNodeFromEndOfList.java) |
+| 19   | [删除链表的倒数第 N 个结点](src/main/java/net/renfei/leetcode/medium/AddTwoNumbers.java) |
 | 167  | [两数之和 II - 输入有序数组](src/main/java/net/renfei/leetcode/medium/TwoSumIIinputArrayIsSorted.java) |
 | 189  | [轮转数组](src/main/java/net/renfei/leetcode/medium/RotateArray.java) |
 | 200  | [岛屿数量](src/main/java/net/renfei/leetcode/medium/NumberOfIslands.java) |
